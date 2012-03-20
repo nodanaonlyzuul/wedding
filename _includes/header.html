@@ -13,11 +13,11 @@
           <li style="font-size: 24px">
             <a href="/index.html">Stephen &amp; Mona</a>
           </li>
-          <li>
+          <li class="{% if page.url == '/registry.html'%}active{%endif%}">
             <a href="/registry.html">Registry</a>
           </li>
 
-          <li>
+          <li class="{% if page.url == '/itinerary.html'%}active{%endif%}">
             <a href="/itinerary.html">Itinerary</a>
           </li>
         </ul>
