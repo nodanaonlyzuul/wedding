@@ -2,10 +2,12 @@
 <html>
 <head>
    <title>{{ page.title }}</title>
+   <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
  <h1>Hello From Layout</h1>
+ {% include header.html %}
  {{ content }}
  <ul>
   <li>
