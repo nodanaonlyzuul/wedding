@@ -5,19 +5,58 @@ title: "Help us, help you help us"
 
 <div class="row-fluid">
   {% include bird_box.html %}
+
   <div class="span6">
-    <h1>See our registries on <a href="http://www.amazon.com/gp/registry/wedding/3U9WDF7HB4WOW" target="_new">Amazon.com</a></h1>
-  </div>
-  
-  <div class="span6">
-    <h1><a id="show_mailing_address" href="#">mail us a gift</a></h1>
+    <h1>* See Our Registry on <a href="http://www.amazon.com/gp/registry/wedding/3U9WDF7HB4WOW" target="_new">Amazon.com</a></h1>
+    <h1>* <a id="show_mailing_address" href="#">Mail a Gift</a></h1>  
+    <h1>* Ca$h Money</h1>
     <p>
-      <address id="mailing_address" style="display:none"></address>
+      {% include paypal_form.html %}
     </p>
-  </div>
-  
+  </div>  
 </div>
 
 <div class="row-fluid">
-  <div class="span3">&nbsp;</div>
+  <div class="span3">&nbsp;</div>  
+  <div class="span6" id="stage">
+    <address id="mailing_address" style="display:none" class="stage_item"></address>
+    <!-- 196x250 -->
+    <span style="display:none" class="stage_item" id="Alexander Hamilton">
+      <span class="pres_pic">
+        <img src="img/hamilton.jpg"></img>
+      </span>
+      <span>
+        Something About Alexander Hamilton
+      </span>
+      
+    </span>
+  
+  	<span style="display:none" class="stage_item" id="Andrew Jackson">
+  	  <span class="pres_pic">
+        <img src="img/jackson.jpg"></img>
+      </span>
+  	 Something About Andrew Jackson
+  	</span>
+  	
+  	<span style="display:none" class="stage_item" id="Ulysses Grant">
+  	  <span class="pres_pic">
+        <img src="img/grant.png"></img>
+      </span>
+  	  Something about Ulysses Grant
+  	</span>
+  	
+  	<span style="display:none" class="stage_item" id="Ben Franklin">
+  	  <span class="pres_pic">
+        <img src="img/franklin.jpg"></img>
+      </span>
+  	  Something about Ben Franklin
+  	</span>
+  	
+  	<span style="display:none" class="stage_item" id="William McKinley">
+  	  <span class="pres_pic">
+        <img src="img/mckinley.jpg"></img>
+      </span>
+  	 Something About William McKinley
+  	</span>
+  </div>
 </div>
