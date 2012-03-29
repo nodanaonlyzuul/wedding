@@ -1,0 +1,16 @@
+#stage{
+  background-color: #999999;
+  height: 250px;
+  display: none;
+  color: #EEEEEE;
+  font-weight: bold;
+}
+
+span.pres_pic{
+  float:left;
+  margin-right: 10px;
+}
+
+span.pres_bio{
+  padding-top: 34px;
+}
