@@ -1,0 +1,9 @@
+#stage{
+  background-color: #999999;
+  height: 250px;
+  display: none;
+}
+
+span.pres_pic{
+  float:left;
+}
