@@ -1,10 +1,47 @@
 #stage{
   background-color: #999999;
-  height: 250px;
-  display: none;
-  color: #333;
+  border:           25px solid #EEEEEE;
+  color:            #EEEEEE;
+  display:          none;
+  font-weight:      bold;
+  height:           250px;
 }
 
 span.pres_pic{
-  float:left;
+  float:        left;
+  margin-right: 10px;
+}
+
+span.pres_bio{
+  padding-top: 34px;
+}
+
+#stage address {
+  margin-top: 12%;
+  text-align: center;
+}
+
+div.story {
+  background-color: #EEEEEE;
+  border: 1px solid #DDDDDD;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 10px;
+}
+
+div.story h1{
+  text-align: center;
+}
+
+div.story p{
+  font-size:   18px;
+  line-height: 25px;
+}
+
+.centered{
+  text-align: center;
+}
+
+div.caption{
+  text-align: center;
+  font-style: italic;
 }
