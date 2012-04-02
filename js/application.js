@@ -1,17 +1,17 @@
 
 $(document).ready(function(){
   function justShow (guytoshow) {
-    $("#stage").show();
-    $('.stage_item').fadeOut(250);
-    window.setTimeout(function(){guytoshow.fadeIn(250)}, 300);
+    $("#stage:hidden").show();
+    $('.stage_item').hide();
+    guytoshow.show(250);
   }
 
   $('#show_mailing_address').click(function(){
-    $("#stage").show(250);
-    $('.stage_item').fadeOut(250);
+    $("#stage:hidden").show();
+    $('.stage_item').hide();
     var addressbox = $("#mailing_address");
     addressbox.html("<strong>Stephen Schor c/o Eastmedia.com</strong><br/> 27 West 24th Street Suite 703 <br/>New York, NY 10010");
-    addressbox.fadeIn(300);
+    addressbox.show();
   })
 
   $("#paypalform").change(function(){
