@@ -13,13 +13,17 @@
           <li style="font-size: 24px">
             <a href="/index.html">Stephen &amp; Mona</a>
           </li>
-
+          
+          <li class="{% if page.url == '/about.html'%}active{%endif%}">
+            <a href="/about.html">Our Story</a>
+          </li>
+          
+          <li class="{% if page.url == '/documents-of-love.html'%}active{%endif%}">
+            <a href="/documents-of-love.html">Documents of Love</a>
+          </li>
+          
           <!-- <li class="{% if page.url == '/registry.html'%}active{%endif%}">
             <a href="/registry.html">Registry</a>
-          </li>
-
-          <li class="{% if page.url == '/itinerary.html'%}active{%endif%}">
-            <a href="/itinerary.html">Itinerary</a>
           </li>
 
           <li class="{% if page.url == '/music.html'%}active{%endif%}">
