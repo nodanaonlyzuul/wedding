@@ -7,7 +7,9 @@ title: "Trivia"
   {% include bird_box.html %}
   <div class="span7">
     <div style="text-align:center;"><h1>Trivia</h1></div>
-
+    <div>
+      <a id="all_answers">CLICK TO SEE ALL ANSWERS</a
+    </div>
     <div class="round">
       <h2>Round 1 (Single Artist Soundtracks)</h2>
       
@@ -216,8 +218,15 @@ title: "Trivia"
 
 <script type="text/javascript" charset="utf-8">
   $(function(){
+    
     $("a.clickanswer").click(function(e){
+      $(this).hide();
       $(this).next("div").show(250);
     })
+
+    $("#all_answers").click(function(){
+      $('.clickanswer').hide();
+      $("div.answer").show(250);  
+    });
   });
 </script>
