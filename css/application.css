@@ -45,3 +45,16 @@ div.caption{
   text-align: center;
   font-style: italic;
 }
+
+div.instructions{
+  margin-top: 10px;
+}
+
+div.question_answer, div.round{
+ margin-top: 15px; 
+}
+
+div.answer{
+  font-weight: bold;
+  display:none;
+}
