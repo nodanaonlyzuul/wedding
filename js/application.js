@@ -16,6 +16,13 @@ $(document).ready(function(){
 
   $("#paypalform").change(function(){
     var selected_value = $("#paypalform option:selected").val();
-    justShow($(document.getElementById(selected_value)));
+    if (selected_value){
+      $("#ppsubmit").show();
+      justShow($(document.getElementById(selected_value)));
+    }else{
+      $("#stage").hide(250);
+      $("#ppsubmit").hide();
+    }
+    
   })
 });
